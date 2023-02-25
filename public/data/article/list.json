@@ -1,0 +1,501 @@
+{
+    "code": 0,
+    "message": "获取文章简要信息列表成功!",
+    "data": {
+        "total": 24,
+        "list": [
+            {
+                "id": "24",
+                "title": "Spring Cloud及其常用组件",
+                "description": "Spring Cloud及其常用组件",
+                "cover": "",
+                "contentId": "24",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "13",
+                        "name": "Spring Cloud"
+                    }
+                ],
+                "views": 34,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:05:47"
+            },
+            {
+                "id": "23",
+                "title": "ElasticSearcher的部署和使用",
+                "description": "ElasticSearcher的部署和使用",
+                "cover": "",
+                "contentId": "23",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "12",
+                        "name": "ElasticSearcher"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:04:46"
+            },
+            {
+                "id": "22",
+                "title": "Redis中间件部署及使用",
+                "description": "Redis中间件部署及使用",
+                "cover": "",
+                "contentId": "22",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "9",
+                        "name": "中间件"
+                    },
+                    {
+                        "id": "11",
+                        "name": "Redis"
+                    }
+                ],
+                "views": 4,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:03:59"
+            },
+            {
+                "id": "21",
+                "title": "RabbitMQ中间件部署及使用",
+                "description": "RabbitMQ中间件部署及使用",
+                "cover": "",
+                "contentId": "21",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "9",
+                        "name": "中间件"
+                    },
+                    {
+                        "id": "10",
+                        "name": "MQ"
+                    }
+                ],
+                "views": 2,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:01:49"
+            },
+            {
+                "id": "20",
+                "title": "JavaScript基础",
+                "description": "JavaScript基础",
+                "cover": "",
+                "contentId": "20",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "8",
+                        "name": "JavaScript"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:00:36"
+            },
+            {
+                "id": "19",
+                "title": "CSS基础",
+                "description": "CSS基础",
+                "cover": "",
+                "contentId": "19",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "7",
+                        "name": "CSS"
+                    }
+                ],
+                "views": 4,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 21:00:14"
+            },
+            {
+                "id": "18",
+                "title": "HTML基础",
+                "description": "HTML基础",
+                "cover": "",
+                "contentId": "18",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "6",
+                        "name": "HTML"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:59:51"
+            },
+            {
+                "id": "17",
+                "title": "数据结构：稀疏数组",
+                "description": "数据结构：稀疏数组",
+                "cover": "",
+                "contentId": "17",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "5",
+                        "name": "数据结构"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:57:57"
+            },
+            {
+                "id": "16",
+                "title": "排序算法：冒泡排序",
+                "description": "排序算法：冒泡排序",
+                "cover": "",
+                "contentId": "16",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "4",
+                        "name": "算法"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:56:31"
+            },
+            {
+                "id": "15",
+                "title": "Java生产者/消费者问题",
+                "description": "Java生产者/消费者问题",
+                "cover": "",
+                "contentId": "15",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:55:19"
+            },
+            {
+                "id": "14",
+                "title": "Java的Lambda表达式",
+                "description": "Java的Lambda表达式",
+                "cover": "",
+                "contentId": "14",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 2,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:54:42"
+            },
+            {
+                "id": "13",
+                "title": "Java静态代理模式",
+                "description": "Java静态代理模式",
+                "cover": "",
+                "contentId": "13",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    },
+                    {
+                        "id": "3",
+                        "name": "设计模式"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:53:48"
+            },
+            {
+                "id": "12",
+                "title": "Java中static的使用",
+                "description": "Java中static的使用",
+                "cover": "",
+                "contentId": "12",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:52:43"
+            },
+            {
+                "id": "11",
+                "title": "Java反射",
+                "description": "Java反射",
+                "cover": "",
+                "contentId": "11",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:51:59"
+            },
+            {
+                "id": "10",
+                "title": "Java注解",
+                "description": "Java注解",
+                "cover": "",
+                "contentId": "10",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:51:34"
+            },
+            {
+                "id": "9",
+                "title": "Java多线程",
+                "description": "Java多线程",
+                "cover": "",
+                "contentId": "9",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:49:57"
+            },
+            {
+                "id": "8",
+                "title": "Java网络编程",
+                "description": "Java网络编程",
+                "cover": "",
+                "contentId": "8",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:49:19"
+            },
+            {
+                "id": "7",
+                "title": "Java异常",
+                "description": "Java异常",
+                "cover": "",
+                "contentId": "7",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:48:42"
+            },
+            {
+                "id": "6",
+                "title": "Java面向对象",
+                "description": "Java面向对象",
+                "cover": "",
+                "contentId": "6",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:48:01"
+            },
+            {
+                "id": "5",
+                "title": "Java数组",
+                "description": "Java数组",
+                "cover": "",
+                "contentId": "5",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:47:04"
+            },
+            {
+                "id": "4",
+                "title": "Java方法",
+                "description": "Java方法",
+                "cover": "",
+                "contentId": "4",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 0,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:46:02"
+            },
+            {
+                "id": "3",
+                "title": "Java流程控制",
+                "description": "Java流程控制",
+                "cover": "",
+                "contentId": "3",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 1,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:45:07"
+            },
+            {
+                "id": "2",
+                "title": "Java基础语法",
+                "description": "Java基础语法",
+                "cover": "",
+                "contentId": "2",
+                "categoryId": "1",
+                "categoryName": "技术记录",
+                "tags": [
+                    {
+                        "id": "2",
+                        "name": "Java"
+                    }
+                ],
+                "views": 2,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:37:54"
+            },
+            {
+                "id": "1",
+                "title": "MarkDown常用语法",
+                "description": "MarkDown常用语法",
+                "cover": "",
+                "contentId": "1",
+                "categoryId": null,
+                "categoryName": null,
+                "tags": [
+                    {
+                        "id": "1",
+                        "name": "Markdown"
+                    }
+                ],
+                "views": 9,
+                "topping": false,
+                "status": 1,
+                "createTime": "2022-10-24 20:29:24"
+            }
+        ]
+    }
+}

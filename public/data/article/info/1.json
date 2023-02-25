@@ -1,0 +1,23 @@
+{
+    "code": 0,
+    "message": "获取文章简要信息成功!",
+    "data": {
+        "id": "1",
+        "title": "MarkDown常用语法",
+        "description": "MarkDown常用语法",
+        "cover": "",
+        "content": "## 1. 标题\n\n语法：在标题名前添加多个“#”并用空格隔开，一个“#”为一级标题，每增加一个增加一级，最多六级\n\n```\n# 一级标题\n## 二级标题\n### 三级标题\n#### 四级标题\n##### 五级标题\n###### 六级标题\n```\n\n![titles](https://img-blog.csdnimg.cn/20200813143845974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0JpbmdKaW5fbW8=,size_16,color_FFFFFF,t_70#pic_center)\n\n\n---\n\n\n## 2. 字体样式\n\n#### 粗体\n\n语法：在需要加粗体的文字两边各加两个”*“号\n\n```\n**这是一段加粗的文字**\n```\n\n**这是一段加粗的文字**\n\n#### 斜体\n\n语法：在需要加斜体的文字两边各加一个”*“号\n\n```\n*这是一段加斜的文字*\n```\n\n*这是一段加斜的文字*\n\n#### 划去\n\n语法：在需要划去的文字两边各加两个”~“符号\n\n```\n~~这是一段划去的文字~~\n```\n\n~~这是一段划去的文字~~\n\n---\n\n## 3. 引用\n\n语法：在引用前加一个“>”并用空格隔开\n\n```\n> 这是一个引用\n```\n\n> 这是一个引用\n\n---\n\n## 4. 分割线\n\n语法：输入“---”或“***”\n\n```\n---\n```\n\n---\n\n```\n***\n```\n\n***\n\n\n\n## 5. 图片\n\n语法：“!”+\"[图片名称]\"+“(图片路径)”\n\n```\n![picture](https://img-blog.csdnimg.cn/20200813143943115.png#pic_center)\n```\n\n![picture](https://img-blog.csdnimg.cn/20200813143943115.png#pic_center)\n\n\n---\n\n\n## 6. 超链接\n\n语法：“[超链接名称]”+\"(超链接地址)\"\n\n```\n[百度](http://www.baidu.com)\n```\n\n[百度](http://www.baidu.com)\n\n---\n\n## 7. 列表\n\n#### 有序列表\n\n语法：在每一列前添加\"序号.\"用空格分开\n\n```\n1. 第一列\n2. 第二列\n3. 第三列\n```\n\n1. 第一列\n2. 第二列\n3. 第三列\n\n#### 无序列表\n\n语法：在每一列前添加\"-\"并用空格分开\n\n```\n- A\n- B\n- C\n```\n\n- A\n- B\n- C\n\n---\n\n## 8. 表格\n\n语法：表头名称用“|”分开并在下一行加上对应的“----|----”，每一列与表头对应\n\n```\n姓名|性别|年龄\n----|----|----\n张三|男|20\n李四|男|21\n王丹|女|20\n```\n\n| 姓名 | 性别 | 年龄 |\n| ---- | ---- | ---- |\n| 张三 | 男   | 20   |\n| 李四 | 男   | 21   |\n| 王丹 | 女   | 20   |\n\n---\n\n## 9. 代码框\n\n语法：在代码的前后加上三个“`”，要区分语言也可以在前面加上语言名称\n\n```\n​```语言名称\n\t代码\n​```\n```\n\n",
+        "categoryId": null,
+        "categoryName": null,
+        "tags": [
+            {
+                "id": "1",
+                "name": "Markdown"
+            }
+        ],
+        "views": 11,
+        "topping": false,
+        "status": 1,
+        "createTime": "2022-10-24 20:29:24"
+    }
+}

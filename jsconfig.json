@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": "./",
+        "jsx": "preserve",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "static/*": [
+                "public/*"
+            ],
+            "vue3-sfc-loader": [
+                "public/import/vue3-sfc-loader@0.8.4/dist/vue3-sfc-loader.esm.js"
+            ],
+            "vue": [
+                "public/import/vue@3.2.37/dist/vue.esm-browser.prod.min.js"
+            ],
+            "vue-router": [
+                "public/import/vue-router@4.0.16/dist/vue-router.esm-browser.min.js"
+            ],
+            "element-plus": [
+                "public/import/element-plus@2.2.18/dist/index.full.min.mjs"
+            ],
+            "axios": [
+                "public/import/axios@1.1.3/dist/esm/axios.min.js"
+            ],
+            "lodash": [
+                "public/import/lodash-es@4.17.21/lodash.js"
+            ],
+            "md-editor-v3": [
+                "public/import/md-editor-v3@2.3.0/lib/md-editor-v3.es.js"
+            ],
+        }
+    }
+}

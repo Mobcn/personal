@@ -1,0 +1,352 @@
+* {
+    /***************************** 前台 *****************************/
+
+    /* 前台主界面 */
+    --mo-home-main-header-bar-height: 60px;
+    --mo-home-main-header-bar-background-color: rgba(255, 255, 255, 0.95);
+    --mo-home-main-header-bar-background-color-hover: rgba(255, 255, 255, 1);
+    --mo-home-main-header-bar-background-color-hidden: rgba(255, 255, 255, 0);
+    --mo-home-main-header-bar-box-shadow: 0 1px 40px -8px rgb(0 0 0 / 50%);
+    --mo-home-main-header-bar-transition: all 0.8s;
+    --mo-home-main-header-bar-transition-bg-show: all 0.5s;
+    --mo-home-main-side-bar-width: 250px;
+    --mo-home-main-side-bar-background-color: #fff;
+    --mo-home-main-side-bar-transition: left 0.3s ease;
+    --mo-home-main-side-switch-width: 50px;
+    --mo-home-main-side-switch-height: 50px;
+    --mo-home-main-side-switch-background-color: #cccc;
+    --mo-home-main-side-switch-box-shadow: 2px 2px 10px #000;
+    --mo-home-main-side-switch-icon-font-size: 40px;
+    --mo-home-main-side-switch-icon-color: #fff;
+    --mo-home-main-mask-background-color: #99999957;
+
+    /* 前台导航栏 */
+    --mo-header-bar-logo-font-family: 'HYWenHei-85W', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'sans-serif';
+    --mo-header-bar-logo-font-size: 28px;
+    --mo-header-bar-logo-font-weight: 800;
+    --mo-header-bar-logo-margin: 0 0 0 10px;
+    --mo-header-bar-logo-padding: 5px;
+    --mo-header-bar-logo-color: #464646;
+    --mo-header-bar-logo-color-hover: #ffd04b;
+    --mo-header-bar-menu-margin: 0 30px 0 0;
+    --mo-header-bar-menu-text-color: #666;
+    --mo-header-bar-menu-text-color-hover: #409eff;
+    --mo-header-bar-menu-text-color-active: #ffd04b;
+    --mo-header-bar-menu-background-color: #fff0;
+    --mo-header-bar-menu-background-color-hover: #ddd8;
+
+    /* 前台侧边栏 */
+    --mo-side-bar-logo-font-family: 'HYWenHei-85W', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'sans-serif';
+    --mo-side-bar-logo-font-size: 28px;
+    --mo-side-bar-logo-font-weight: 800;
+    --mo-side-bar-logo-padding: 200px 0 50px 0;
+    --mo-side-bar-logo-color: #464646;
+    --mo-side-bar-menu-text-color: #666;
+    --mo-side-bar-menu-text-color-active: #ffd04b;
+    --mo-side-bar-menu-background-color: #fff0;
+
+    /* 主页 */
+    --mo-main-avatar-animation: fadeInDown 1.5s 1;
+    --mo-main-avatar-img-padding: 5px;
+    --mo-main-avatar-img-transition: all 1s ease;
+    --mo-main-avatar-img-transform: rotate(0);
+    --mo-main-avatar-img-transform-hover: rotate(360deg);
+    --mo-main-avatar-img-border-radius: 50%;
+    --mo-main-avatar-img-box-shadow: inset 0 0 10px #000;
+    --mo-main-move-down-font-size: 28px;
+    --mo-main-move-down-width: 50px;
+    --mo-main-move-down-height: 30px;
+    --mo-main-move-down-transform: scale(1.5, 1);
+    --mo-main-move-down-color: #fff;
+    --mo-main-down-icon-animation: slideInDown 2s infinite linear alternate;
+    --mo-main-body-background-color: #f5f5f5;
+    --mo-main-content-width: 90%;
+    --mo-main-content-min-width: 350px;
+    --mo-main-content-max-width: 780px;
+    --mo-main-article-pager-padding: 0 0 20px 0;
+    --mo-main-backtop-width: 50px;
+    --mo-main-backtop-height: 50px;
+    --mo-main-backtop-icon-font-size: 20px;
+
+    /* 文章卡片 */
+    --mo-article-card-background-color: #fff;
+    --mo-article-card-box-shadow: 0 1px 20px -6px rgb(0 0 0 / 50%);
+    --mo-article-card-box-shadow-hover: 0 5px 10px 5px rgb(110 110 110 / 40%);
+    --mo-article-card-detail-font-family: 'HYWenHei-85W', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'sans-serif';
+    --mo-article-card-title-font-weight: 550;
+    --mo-article-card-title-color: #504e4e;
+    --mo-article-card-title-color-hover: #fe9600;
+    --mo-article-card-description-color: #000000a8;
+    --mo-article-card-footer-color: #888;
+    --mo-article-card-info-split-margin: 0 5px;
+    --mo-article-card-info-icon-font-size: 16px;
+    --mo-article-card-info-icon-margin: 0 5px 0 0;
+
+    /* 文章浏览 */
+    --mo-article-view-head-background-image: var(--mo-article-view-cover-image);
+    --mo-article-view-detail-font-family: 'HYWenHei-85W', 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC',
+        'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'sans-serif';
+    --mo-article-view-detail-color: #fff;
+    --mo-article-view-detail-text-shadow: 2px 2px 10px #000;
+    --mo-article-view-info-font-size: 14px;
+    --mo-article-view-info-padding: 0 0 25px 0;
+    --mo-article-view-info-item-padding: 0 10px 0 0;
+    --mo-article-view-avatar-img-width: 35px;
+    --mo-article-view-avatar-img-height: 35px;
+    --mo-article-view-body-padding: 10px;
+    --mo-article-view-body-background-color: #f5f6f7;
+    --mo-article-view-backtop-width: 50px;
+    --mo-article-view-backtop-height: 50px;
+    --mo-article-view-backtop-icon-font-size: 20px;
+
+    /* 文章归档 */
+    --mo-archives-padding: 100px 0 0 0;
+    --mo-archives-timeline-width: 50%;
+    --mo-archives-timeline-min-width: 220px;
+    --mo-archives-timeline-padding: 0 50px 0 115px;
+    --mo-archives-link-font-size: 14px;
+    --mo-archives-link-color: #303133;
+    --mo-archives-link-color-hover: #ffd04b;
+    --mo-archives-timeline-item-wrapper-width: calc(100% - 28px);
+    --mo-archives-year-month-wrapper-font-size: 16px;
+    --mo-archives-year-month-wrapper-top: -4px;
+    --mo-archives-year-month-wrapper-right: 130px;
+    --mo-archives-tips-font-size: 15px;
+    --mo-archives-tips-width: calc(50% + 20px);
+    --mo-archives-tips-min-width: 240px;
+    --mo-archives-tips-padding: 0 0 20px 135px;
+    --mo-archives-tips-color: #303133;
+
+    /* 关于 */
+    --mo-about-head-background-image: var(--mo-about-cover-image);
+    --mo-about-title-font-size: 40px;
+    --mo-about-title-font-weight: 500;
+    --mo-about-title-color: #fff;
+    --mo-about-title-text-shadow: 2px 2px 10px #000;
+    --mo-about-wave-width: 150%;
+    --mo-about-wave-height: 38px;
+    --mo-about-wave-margin: 0 0 -18px 0;
+    --mo-about-wave-border-radius: 50% 50% 0 0;
+    --mo-about-wave-background: #fff;
+    --mo-about-body-padding: 10px;
+
+    /* 备案 */
+    --mo-beian-font-size: 12px;
+    --mo-beian-padding: 10px 0;
+    --mo-beian-background-color: #e6e6e6;
+    --mo-beian-icp-height: 20px;
+    --mo-beian-icp-margin: 0 10px 0 0;
+    --mo-beian-icp-color: #939393;
+    --mo-beian-police-height: 20px;
+    --mo-beian-police-color: #939393;
+    --mo-beian-police-img-margin: 0 2px 0 0;
+
+    /***************************** 后台 *****************************/
+
+    /* 后台管理登录 */
+    --mo-login-background-image: var(--mo-login-background-url);
+    --mo-login-background-after-background: #f6f6f6b4;
+    --mo-login-panel-background: #ffffff80;
+    --mo-login-panel-box-shadow: 0 0 10px #000;
+    --mo-login-title-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+        '微软雅黑', Arial, sans-serif;
+    --mo-login-title-font-size: 30px;
+    --mo-login-title-color: #000;
+
+    /* 后台管理面板 */
+    --mo-panel-header-height: 60px;
+    --mo-panel-header-border-bottom: 1px solid #ffd04b;
+    --mo-panel-header-background-color: #505860;
+    --mo-panel-aside-background-color: #545c64;
+    --mo-panel-main-padding: 5px;
+    --mo-panel-main-background-color: #596172;
+    --mo-panel-tabs-border-radius: 5px;
+    --mo-panel-menu-divider-background-color: #bebebe;
+
+    /* 后台管理头部 */
+    --mo-head-logo-font-family: '宋体';
+    --mo-head-logo-font-size: 30px;
+    --mo-head-logo-color: #e6e6e6;
+    --mo-head-logo-border: 1px solid #f5f5f5;
+    --mo-head-logo-border-radius: 5px;
+    --mo-head-logout-font-size: 24px;
+    --mo-head-logout-color: #e6e6e6;
+    --mo-head-logout-color-hover: #ffd04b;
+
+    /* 后台管理左侧边菜单 */
+    --mo-left-menu-background-color: #545c64;
+    --mo-left-menu-background-color-hover: #434a50;
+    --mo-left-menu-text-color: #fff;
+    --mo-left-menu-active-text-color: #ffd04b;
+
+    /* 文章发布 */
+    --mo-publish-article-header-height: 166px;
+
+    /* 文章管理 */
+    --mo-article-management-header-height: 56px;
+
+    /* 文章预览 */
+    --mo-article-view-title-font-size: 32px;
+    --mo-article-view-title-font-weight: bold;
+
+    /* 文章列表 */
+    --mo-article-column-height: 120px;
+    --mo-article-column-row-border-radius: 10px;
+    --mo-article-column-row-background-color-hover: #f5f7fa;
+    --mo-article-column-title-font-size: 16px;
+    --mo-article-column-title-font-weight: 500;
+    --mo-article-column-title-color: #555666;
+    --mo-article-column-title-color-hover: red;
+    --mo-article-column-description-font-size: 14px;
+    --mo-article-column-description-color: #999aaa;
+    --mo-article-column-info-font-size: 14px;
+    --mo-article-column-info-color: #999aaa;
+    --mo-article-column-info-icon-font-size: 14px;
+    --mo-article-column-info-icon-color: #989898;
+    --mo-article-column-time-font-size: 14px;
+    --mo-article-column-time-color: #999;
+    --mo-article-column-action-font-size: 14px;
+    --mo-article-column-action-color: #222226;
+    --mo-article-column-button-hover: #666;
+
+    /* 分类管理视图 */
+    --mo-category-management-status-on-color: #13ce66;
+    --mo-category-management-status-off-color: #ff4949;
+
+    /* 分类添加或更新对话框 */
+    --mo-category-dialog-status-on-color: #13ce66;
+    --mo-category-dialog-status-off-color: #ff4949;
+
+    /* 标签管理视图 */
+    --mo-tag-management-status-on-color: #13ce66;
+    --mo-tag-management-status-off-color: #ff4949;
+
+    /* 标签添加或更新对话框 */
+    --mo-tag-dialog-status-on-color: #13ce66;
+    --mo-tag-dialog-status-off-color: #ff4949;
+
+    /* 管理相关视图 */
+    --mo-management-header-height: 56px;
+
+    /* 工具条 */
+    --mo-toolbar-input-width: 300px;
+
+    /* 图片上传 */
+    --mo-image-uploader-width: 72px;
+    --mo-image-uploader-height: 72px;
+}
+
+/* 移动端 */
+@media screen and (max-width: 960px) {
+    * {
+        /* 主页 */
+        --mo-main-welcome-height: 300px;
+        --mo-main-welcome-padding: 80px 0 0 0;
+        --mo-main-background-height: var(--mo-main-welcome-height);
+        --mo-main-background-position: center;
+        --mo-main-avatar-img-width: 80px;
+        --mo-main-avatar-img-height: 80px;
+        --mo-main-wave-width: 150%;
+        --mo-main-wave-height: 38px;
+        --mo-main-wave-margin: 0 0 -18px 0;
+        --mo-main-wave-border-radius: 50% 50% 0 0;
+        --mo-main-wave-background: #f5f5f5;
+        --mo-main-wave-animation: none;
+        --mo-main-content-padding: 0;
+        --mo-main-article-item-padding: 10px 0 10px 0;
+        --mo-main-backtop-right: 10px;
+        --mo-main-backtop-bottom: 10px;
+
+        /* 文章卡片 */
+        --mo-article-card-height: 270px;
+        --mo-article-card-border-radius: 10px;
+        --mo-article-card-cover-border-radius: 10px 10px 0 0;
+        --mo-article-card-title-width: calc(100% - 20px);
+        --mo-article-card-title-padding: 10px 10px 0 10px;
+        --mo-article-card-title-font-size: 18px;
+        --mo-article-card-description-font-size: 15px;
+        --mo-article-card-footer-font-size: 12px;
+        --mo-article-card-footer-padding: 0 0 10px 10px;
+
+        /* 文章浏览 */
+        --mo-article-view-head-height: 280px;
+        --mo-article-view-detail-width: 95%;
+        --mo-article-view-detail-min-width: var(--mo-article-view-detail-width);
+        --mo-article-view-detail-height: 100%;
+        --mo-article-view-title-font-size: 26px;
+        --mo-article-view-title-padding: 0 0 30px 0;
+        --mo-article-view-content-width: 95%;
+        --mo-article-view-content-min-width: var(--mo-article-view-content-width);
+        --mo-article-view-content-padding: 5px;
+        --mo-article-view-content-border-radius: 5px;
+        --mo-article-view-backtop-right: 10px;
+        --mo-article-view-backtop-bottom: 10px;
+
+        /* 关于 */
+        --mo-about-head-height: 35vh;
+        --mo-about-content-width: 95%;
+        --mo-about-content-min-width: var(--mo-about-content-width);
+    }
+}
+
+/* PC端 */
+@media screen and (min-width: 961px) {
+    * {
+        /* 主页 */
+        --mo-main-welcome-height: 100vh;
+        --mo-main-welcome-padding: 35vh 0 0 0;
+        --mo-main-background-height: 100%;
+        --mo-main-background-position: 0 -80px;
+        --mo-main-avatar-img-width: 130px;
+        --mo-main-avatar-img-height: 130px;
+        --mo-main-wave-width: 100%;
+        --mo-main-wave-height: 85px;
+        --mo-main-wave-margin: 0;
+        --mo-main-wave-border-radius: 0;
+        --mo-main-wave-background: var(--mo-main-wave-image) repeat-x;
+        --mo-main-wave-animation: waveMove 30s infinite linear;
+        --mo-main-content-padding: 80px 0 0 0;
+        --mo-main-article-item-padding: 20px 0 20px 0;
+        --mo-main-backtop-right: 100px;
+        --mo-main-backtop-bottom: 100px;
+
+        /* 文章卡片 */
+        --mo-article-card-height: 210px;
+        --mo-article-card-border-radius: 20px;
+        --mo-article-card-cover-border-radius: 20px 0 0 20px;
+        --mo-article-card-title-width: calc(100% - 40px);
+        --mo-article-card-title-padding: 20px 20px 0 20px;
+        --mo-article-card-title-font-size: 24px;
+        --mo-article-card-description-font-size: 18px;
+        --mo-article-card-footer-font-size: 16px;
+        --mo-article-card-footer-padding: 0 0 20px 20px;
+
+        /* 文章浏览 */
+        --mo-article-view-head-height: 50vh;
+        --mo-article-view-detail-width: 60%;
+        --mo-article-view-detail-min-width: 800px;
+        --mo-article-view-detail-height: 100%;
+        --mo-article-view-title-font-size: 32px;
+        --mo-article-view-title-padding: 0 0 50px 0;
+        --mo-article-view-content-width: 60%;
+        --mo-article-view-content-min-width: 800px;
+        --mo-article-view-content-padding: 10px;
+        --mo-article-view-content-border-radius: 5px;
+        --mo-article-view-catalog-top: calc(var(--mo-home-main-header-bar-height) + 10px);
+        --mo-article-view-catalog-max-height: calc(100vh - var(--mo-article-view-catalog-top) - 10px);
+        --mo-article-view-catalog-margin: 0 0 0 10px;
+        --mo-article-view-catalog-padding: 10px;
+        --mo-article-view-catalog-border-radius: 5px;
+        --mo-article-view-catalog-background-color: #fff;
+        --mo-article-view-backtop-right: 100px;
+        --mo-article-view-backtop-bottom: 100px;
+
+        /* 关于 */
+        --mo-about-head-height: 55vh;
+        --mo-about-content-width: 60%;
+        --mo-about-content-min-width: 800px;
+    }
+}

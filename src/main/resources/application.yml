@@ -1,0 +1,68 @@
+# 端口
+server:
+  port: 8233
+
+# spring应用配置
+spring:
+
+  application:
+    name: personal
+
+  # 文件上传限制
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+  # jackson(spring自带)时间格式化 更多：org.springframework.boot.autoconfigure.jackson.JacksonProperties
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  # 数据库配置
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:./data/personal
+    username: root
+    password: 123456
+  jpa:
+    database: h2
+    hibernate:
+      # 自动更新
+      ddl-auto: update
+    # 页面延时加载
+    open-in-view: false
+    # 日志中显示sql语句
+    show-sql: true
+    properties:
+      hibernate:
+        # 配置自定义方言解析器取消外键生成
+        dialect_resolvers: com.mobingc.personal.config.hibernate.ForeignKeyCancelDialectResolver
+  h2:
+    console:
+      # h2网页管理路径
+      path: /h2
+      enabled: true
+      settings:
+        web-allow-others: true
+        trace: true
+
+# 日志配置
+logging:
+  # 日志级别
+  level:
+    root: info
+  # 日志文件输出位置
+  file:
+    name: personal-log/personal.log
+  # 日志样式
+  pattern:
+    console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%-5level)[%thread] --- %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+    file: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] --- %logger : %msg%n'
+  # 日志文件配置
+  logback:
+    rollingpolicy:
+      # 单文件的大小，默认10M, 超过之后打包成一个日志文件
+      max-file-size: 1MB
+      # 日志保存的天数
+      max-history: 30

@@ -1,0 +1,64 @@
+{
+  "user": {
+    "description": "网站用户名",
+    "value": "喂!",
+    "isPublic": true
+  },
+  "adminEntrance": {
+    "description": "后台管理入口",
+    "value": "admin",
+    "isPublic": true
+  },
+  "avatarImageURL": {
+    "description": "网站用户头像",
+    "value": "",
+    "isPublic": true
+  },
+  "backgroundImageURL": {
+    "description": "前台背景图片",
+    "value": "",
+    "isPublic": true
+  },
+  "aboutCoverImageURL": {
+    "description": "关于页面封面",
+    "value": "",
+    "isPublic": true
+  },
+  "defaultCoverImageURL": {
+    "description": "文章默认封面",
+    "value": "",
+    "isPublic": true
+  },
+  "_404ImageURL": {
+    "description": "404页面图片",
+    "value": "",
+    "isPublic": true
+  },
+  "title": {
+    "description": "网页标题",
+    "value": {
+      "home": "我の小站",
+      "admin": "后台管理",
+      "_404": "小笨蛋，页面跑偏啦～"
+    },
+    "isPublic": true
+  },
+  "pageSize": {
+    "description": "分页列表每页显示数据条数",
+    "value": {
+      "admin": 20,
+      "home": 10
+    },
+    "isPublic": true
+  },
+  "lanzou": {
+    "description": "蓝奏云配置",
+    "value": {
+      "ylogin": "",
+      "phpdisk_info": "",
+      "folder_id": "",
+      "download_origin": ""
+    },
+    "isPublic": false
+  }
+}

@@ -9,13 +9,13 @@ const adminEntrance = storage.get('adminEntrance') || 'admin';
 // 配置项
 const options = {
     // 是否开启mock
-    enableMock: true,
+    enableMock: false,
     // mock基础路径
     mockBaseURL: new URL(window.location.href).origin + '/static/data',
     // mock替换请求数组
     mockMatcher: ['/setting/public/', '/article/list/', '/article/info/[0-9]+'],
     // 请求基础路径
-    baseURL: 'https://api.mobingc.cn',
+    baseURL: 'https://mo-api.zeabur.app',
     // 请求超时时间（毫秒）
     timeout: 30000,
     // 请求header参数配置

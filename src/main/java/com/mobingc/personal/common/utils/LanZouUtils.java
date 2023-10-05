@@ -13,13 +13,14 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.time.Duration;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 蓝奏云工具类
@@ -174,22 +175,18 @@ public class LanZouUtils {
         }
 
         // 解析伪直链
+        String tmpDirectURL;
         Element script = downloadDocument.getElementsByTag("script").get(0);
         String scriptText = script.html();
-        scriptText = scriptText.replaceAll("[^:]//.*|/\\*(\\s|.)*?\\*/", "");
-        scriptText = scriptText.replaceAll("\n", ";");
-        scriptText = scriptText.replaceAll("\"", "'");
-        scriptText = scriptText.replaceAll(" ", "");
-        Matcher matcher = Pattern.compile("=[a-z]*\\+'\\?[0-9a-zA-Z/+=]*'").matcher(scriptText);
-        if (!matcher.find()) {
+        String prefix = "(function(){var document={getElementById:function(){return document;}};";
+        String suffix = "for(var k in document)typeof document[k]==\"function\"&&document[k]();return document.href;})()";
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptEngine engine = manager.getEngineByName("js");
+        try {
+            tmpDirectURL = (String) engine.eval(prefix + scriptText + suffix);
+        } catch (ScriptException e) {
             throw new RuntimeException("蓝奏云直链解析有变动，解析失败!");
         }
-        String tmpDirectURL = matcher.group(0).substring(1);
-        String hostName = tmpDirectURL.substring(1, tmpDirectURL.indexOf("+"));
-        String suffix = tmpDirectURL.substring(tmpDirectURL.indexOf("'") + 1, tmpDirectURL.length() - 1);
-        int hostValueIndex = scriptText.indexOf(hostName) + hostName.length() + 2;
-        String host = scriptText.substring(hostValueIndex, scriptText.indexOf(";", hostValueIndex) - 1);
-        tmpDirectURL = host + suffix;
 
         // 通过伪直链获取直链
         HttpHeaders requestHeaders = new HttpHeaders();

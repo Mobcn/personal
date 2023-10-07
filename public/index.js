@@ -26,8 +26,8 @@ Object.defineProperty(HTMLScriptElement.prototype, 'src', {
 });
 
 // 全局拦截link标签请求
-const linkNativeSet = Object.getOwnPropertyDescriptor(HTMLLinkElement.prototype, 'src').set;
-Object.defineProperty(HTMLLinkElement.prototype, 'src', {
+const linkNativeSet = Object.getOwnPropertyDescriptor(HTMLLinkElement.prototype, 'href').set;
+Object.defineProperty(HTMLLinkElement.prototype, 'href', {
     set: function (url) {
         // 替换script标签的请求地址
         if (url.indexOf('cdnjs.cloudflare.com/ajax/libs') !== -1) {

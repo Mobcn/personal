@@ -98,6 +98,8 @@ const getArticleInfo = (id) => {
             for (const key in res.data) {
                 article[key] = res.data[key];
             }
+            // 文章空格统一
+            article.content = article.content.replace(/\u00A0/g, '\u0020');
             // 设置文章封面
             cssVariable.coverURL = `url('${article.cover || defaultCoverURL}')`;
         })

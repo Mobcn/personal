@@ -3,14 +3,14 @@
     "message": "获取设置项成功!",
     "data": {
         "adminEntrance": "admin",
-        "_404ImageURL": "",
-        "avatarImageURL": "",
+        "_404ImageURL": "https://i1.wp.com/ww1.sinaimg.cn/large/007q9ZDily1h3mv1t69btj30gc0a0acy.jpg",
+        "avatarImageURL": "https://i1.wp.com/ww1.sinaimg.cn/large/007q9ZDily1h3mv7etuivj30jn0jnwq9.jpg",
         "beian": "",
         "pageSize": "{\"home\":5,\"admin\":10}",
         "title": "{\"home\":\"沫の小站\",\"admin\":\"后台管理\",\"_404\":\"小笨蛋，页面跑偏啦～\"}",
         "user": "沫",
-        "aboutCoverImageURL": "",
-        "defaultCoverImageURL": "",
-        "backgroundImageURL": ""
+        "aboutCoverImageURL": "https://i1.wp.com/ww1.sinaimg.cn/large/007q9ZDigy1h7f9s18kc1j30uy0ait9s.jpg",
+        "defaultCoverImageURL": "https://i1.wp.com/ww1.sinaimg.cn/large/007q9ZDily1h3mv7f5mfbj30zj0k24dl.jpg",
+        "backgroundImageURL": "https://i1.wp.com/ww1.sinaimg.cn/large/007q9ZDily1h3mv7fyyjlj32yo1o0hdu.jpg"
     }
 }
